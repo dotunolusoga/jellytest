@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.api_server_url = "https://apidev.jellytelly.com"
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
