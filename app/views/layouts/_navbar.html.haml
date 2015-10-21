@@ -1,0 +1,12 @@
+%header.navbar.navbar-default
+  .navbar-header
+    %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    = link_to 'JellyTest', root_path, class: 'navbar-brand'
+  .navbar-collapse.collapse
+    %ul.nav.navbar-nav
+      %li.active
+        = link_to 'Home', root_path
