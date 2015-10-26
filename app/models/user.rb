@@ -1,8 +1,7 @@
-class User < ActiveRecord::Base
-  base_url Rails.application.config.api_server_url
+class User < ActiveRestClient::Base
 
+  get :all, '/users'
   get :find, '/users/id'
   get :login, '/login?email=:email&password=password'
-
 
 end
