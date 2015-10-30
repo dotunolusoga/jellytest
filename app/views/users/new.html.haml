@@ -1,9 +1,12 @@
-%h2 Sign up
-= form_for @user do |f|
-  = f.error_notification
-.form-inputs
-  = f.input :email, required: true, autofocus: true
-  = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
-  = f.input :password_confirmation, required: true
-.form-actions
-  = f.button :submit, "Sign up"
+%h2 Login
+
+= form_for @user, :action => :create do
+  = label_tag :email, 'Email: '
+  %br
+  = text_field_tag :email
+  %br
+  = label_tag :password, 'Password: '
+  %br
+  = password_field_tag :password
+  %br
+  = submit_tag 'Login'

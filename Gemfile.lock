@@ -187,6 +187,9 @@ GEM
     sexp_processor (4.6.0)
     shoulda-matchers (3.0.0)
       activesupport (>= 4.0.0)
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     slop (3.6.0)
     spring (1.4.0)
     spring-commands-rspec (1.0.4)
@@ -234,6 +237,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   shoulda-matchers
+  simple_form
   spring
   spring-commands-rspec
   web-console (~> 2.0)
